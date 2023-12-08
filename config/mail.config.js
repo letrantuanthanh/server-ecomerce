@@ -1,6 +1,7 @@
 require("dotenv/config");
 
 module.exports = {
+  SECRET: process.env.SECRET,
   MAILER: process.env.MAIL_MAILER,
   HOST: process.env.MAIL_HOST,
   PORT: process.env.MAIL_PORT,

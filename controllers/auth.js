@@ -2,7 +2,8 @@ const { validationResult } = require("express-validator");
 const User = require("../models/user");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-
+const dotenv = require("dotenv");
+dotenv.config();
 const SECRET_KEY = process.env.SECRET;
 
 exports.getAllUsers = (req, res, next) => {
